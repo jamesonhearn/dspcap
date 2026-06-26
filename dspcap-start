@@ -3,7 +3,7 @@ set -e
 set -o pipefail
 STARTTIME=$(date -u +%Y-%m-%dT%H:%M)
 PIDFILE=/var/run/dspcap.pid
-NAMESPACE=default
+NAMESPACE=testing
 # IMAGE=alpine:3.15
 IMAGE=mcr.microsoft.com/dotnet/runtime-deps:6.0
 TCPDUMP_ARGS="-i any -s 1000 -C 100"
